@@ -1,0 +1,30 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+
+brew "autojump"
+brew "git"
+brew "git-lfs"
+brew "mas"
+brew "node"
+brew "tree"
+brew "zsh"
+brew "zsh-completions"
+
+cask "appcleaner"
+cask "bettertouchtool"
+cask "docker"
+cask "font-hack-nerd-font"
+cask "intellij-idea"
+cask "iterm2"
+cask "mysqlworkbench"
+cask "notion"
+cask "postman"
+cask "slack"
+cask "visual-studio-code"
+
+mas "Irvue", id: 1039633667
+mas "KakaoTalk", id: 869223134
+mas "Melon", id: 1236050766
+mas "Things", id: 904280696
