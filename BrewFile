@@ -11,6 +11,7 @@ brew "node"
 brew "tree"
 brew "zsh"
 brew "zsh-completions"
+brew "mdv"
 
 cask "appcleaner"
 cask "bettertouchtool"
