@@ -25,6 +25,8 @@ cask "notion"
 cask "postman"
 cask "slack"
 cask "visual-studio-code"
+cask "google-chrome"
+cask "firefox"
 
 mas "Irvue", id: 1039633667
 mas "KakaoTalk", id: 869223134
