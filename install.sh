@@ -1,38 +1,52 @@
-# brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#!/bin/bash
+#
+# Nesoy
+# github.com/nesoy
 
-# mas
-brew install mas
+DOTFILE_HOME="~/.nesoy"
+EMAIL="kyoje11@gmail.com"
+NAME="Kwon Young Jae"
 
-# alfred - version 3
-# https://www.alfredapp.com/help/v3/
+echo "Install Xcode🍺"
+xcode-select --install
 
-brew bundle
 
-# Git Config
-git config --global user.name "Kwon Young Jae"
-git config --global user.email "kyoje11@gmail.com""
+echo "Install Brew🍺"
+if [ -z "$(which brew)" ]
+then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+
+echo "Install Brew Files🍺"
+if [ -z "$(which mass)" ]
+then
+    brew install mas
+    mkdir -p $DOTFILE_HOME
+    curl https://raw.githubusercontent.com/NESOY/dotfiles/master/BrewFile -o $DOTFILE_HOME/BrewFile
+    brew bundle --file $DOTFILE_HOME/BrewFile
+fi
+
+
+echo "Install Oh-my-zsh🍺"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+echo "Install Zplug🍺"
+export ZPLUG_HOME=~/.zplug
+git clone https://github.com/zplug/zplug $ZPLUG_HOME
+
+
+echo "Install SCM_BREEZE🍺"
+git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+~/.scm_breeze/install.sh
+
+
+echo "Config Git🍺"
+git config --global user.name $NAME
+git config --global user.email $EMAIL
+# Handling Korean Option
 git config --global core.precomposeunicode true
 git config --global core.quotepath false
 
 
-# oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# zsh plugin
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-# copy .zshrc
-cp .zshrc ~/.zshrc
-source ~/.zshrc
-
-
-# Theme
-npm install --global pure-prompt
-source ~/.zshrc
-
-# Git plugin
-git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
-~/.scm_breeze/install.sh
-source ~/.zshrc

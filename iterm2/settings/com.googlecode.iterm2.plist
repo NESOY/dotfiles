@@ -4,6 +4,8 @@
 <dict>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -703,6 +705,8 @@
 	<false/>
 	<key>DimOnlyText</key>
 	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>HapticFeedbackForEsc</key>
@@ -711,14 +715,24 @@
 	<true/>
 	<key>HideScrollbar</key>
 	<true/>
+	<key>HideTab</key>
+	<false/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>524288</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Desktop/nesoy/dotfiles/iterm2/settings</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -760,13 +774,19 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
+	<string>533 1982 616 174 -439 1050 2560 1417 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1839 1986 620 392 869 1200 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2184 0 824 1669 0 0 3008 1669 </string>
+	<string>1276 0 1284 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -977,6 +997,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Automatically Log</key>
+			<false/>
 			<key>BM Growl</key>
 			<true/>
 			<key>Background Color</key>
@@ -1428,7 +1450,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>HackNerdFontComplete-Regular 17</string>
+			<string>JetBrainsMono-Bold 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -1444,7 +1466,7 @@
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1521,6 +1543,8 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1553,6 +1577,8 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1585,6 +1611,8 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1617,6 +1645,8 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1631,7 +1661,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -1654,35 +1684,52 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.9</string>
 		<string>3.3.5</string>
+		<string>3.3.8</string>
+		<string>3.3.7</string>
+		<string>3.3.6</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
 		<string>Hack Nerd Font</string>
+		<string>JetBrains Mono</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>JetBrains Mono</string>
 		<string>Hack Nerd Font</string>
 		<string>Monaco</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {2560, 1440}}</string>
+		<key>topLeft</key>
+		<string>{269, 595}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {3008, 1692}}</string>
+		<string>{{-439, 1050}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1088, 1190}</string>
+		<string>{511, 1863}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>DF015C4C-D3FE-48D0-ACF4-6C6578F420AA</string>
+	<key>NoSyncLastTipTime</key>
+	<real>592743320.92837298</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>5</integer>
+	<integer>124</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>592297813.22214901</real>
+	<real>592447836.31836796</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2390,8 +2437,21 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>592125013.22202802</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2427,6 +2487,12 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/kakao/Desktop/nesoy/dotfiles/iterm2/settings</string>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
+	<key>Print In Black And White</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2436,8 +2502,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-07T09:12:25Z</date>
+	<date>2020-05-31T13:00:36Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>Size Changes Affect Profile</key>
 	<true/>
@@ -2449,6 +2517,12 @@
 	<real>0.10000000000000001</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
+	<key>SwitchPaneModifier</key>
+	<integer>6</integer>
+	<key>SwitchTabModifier</key>
+	<integer>4</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>6</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
@@ -2457,9 +2531,17 @@
 	<integer>12</integer>
 	<key>TerminalVMargin</key>
 	<integer>10</integer>
+	<key>UseBorder</key>
+	<false/>
+	<key>UseLionStyleFullscreen</key>
+	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WindowNumber</key>
+	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.5</string>
+	<string>3.3.9</string>
 </dict>
 </plist>

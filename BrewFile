@@ -10,6 +10,7 @@ brew "mas"
 brew "node"
 brew "tree"
 brew "zsh"
+brew "zplug"
 brew "zsh-completions"
 brew "mdv"
 brew "thefuck"
@@ -31,6 +32,7 @@ cask "slack"
 cask "visual-studio-code"
 cask "google-chrome"
 cask "firefox"
+cask "hammerspoon"
 
 mas "Irvue", id: 1039633667
 mas "KakaoTalk", id: 869223134
