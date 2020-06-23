@@ -5,6 +5,7 @@ export ZSH=~/.oh-my-zsh
 ##################
 source ~/.zplug/init.zsh
 
+
 ##################
 # ZPLUG START
 ##################
@@ -20,6 +21,7 @@ zplug "plugins/colorize", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "wting/autojump", \
       use:"bin/autojump.zsh"
+
 
 ##################
 # ZPLUG THEME
@@ -41,6 +43,7 @@ zplug load
 export LANGUAGE=ko_KR.UTF-8
 export LANG=ko_KR.UTF-8
 alias zshconfig="vim ~/.zshrc"
+
 
 ##################
 # SETTING - GIT
